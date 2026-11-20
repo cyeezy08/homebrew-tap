@@ -1,6 +1,6 @@
 class Hostage < Formula
-  desc "High-speed dangling DNS and subdomain takeover engine in Go"
-  homepage "https://leviathan.ac"
+  desc "Dangling DNS classification for authorized asset inventories"
+  homepage "https://github.com/cyeezy08/HostageLVX"
   version "0.3.0"
 
   on_macos do
