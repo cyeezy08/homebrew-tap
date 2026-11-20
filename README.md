@@ -1,31 +1,37 @@
-# Leviathan OffSec Homebrew Tap
+# Leviathan X | Homebrew Distribution
 
-Official Homebrew tap for [Leviathan Offensive Security](https://leviathan.ac) tooling.
+This tap packages the standalone **Leviathan X** Go utilities. The upstream CLI projects remain independently maintained and can be used without the hosted intelligence platform.
 
-## Quick Install
+| Formula | Tool | Capability |
+| --- | --- | --- |
+| [fenrir](Formula/fenrir.rb) | [FenrirLVX](https://github.com/cyeezy08/FenrirLVX) | WordPress component evidence and local advisory correlation |
+| [hostage](Formula/hostage.rb) | [HostageLVX](https://github.com/cyeezy08/HostageLVX) | Dangling DNS classification with explicit provider evidence |
+
+## Installation
+
+The existing tap name is `leviathan-offsec/tap` for compatibility with published formula references. The **product name is Leviathan X**.
 
 ```bash
-# Add the tap
 brew tap leviathan-offsec/tap
-
-# Install FenrirLVX (Offline CMS & WordPress vulnerability matcher)
-brew install fenrir
-
-# Install HostageLVX (High-speed dangling DNS & takeover engine)
-brew install hostage
+brew install fenrir hostage
+fenrir --help
+hostage --help
 ```
 
-## Available Formulas
+Review each tool's README, release notes and license before use. Both utilities are intended for explicitly authorized target inventories. To inspect the formula itself:
 
-| Formula | Description | Upstream |
-|---|---|---|
-| [`fenrir`](Formula/fenrir.rb) | High-speed Go CLI for WordPress attack surface mapping and offline CVE correlation | [leviathan-offsec/FenrirLVX](https://github.com/leviathan-offsec/FenrirLVX) |
-| [`hostage`](Formula/hostage.rb) | High-speed dangling DNS and subdomain takeover engine in Go | [leviathan-offsec/HostageLVX](https://github.com/leviathan-offsec/HostageLVX) |
+```bash
+brew cat leviathan-offsec/tap/fenrir
+brew cat leviathan-offsec/tap/hostage
+```
 
-## Updating
+## Updates
 
 ```bash
 brew update
-brew upgrade fenrir
-brew upgrade hostage
+brew upgrade fenrir hostage
 ```
+
+Formula versions and artifact hashes reflect the last published release, **not the latest source commit**. Review upstream CI and release checksums before changing a formula.
+
+**Related:** [surfacediff](https://github.com/cyeezy08/surfacediff) is a Python snapshot/diff tool and is not packaged by this tap.
