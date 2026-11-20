@@ -9,10 +9,10 @@ This tap packages the standalone **Leviathan X** Go utilities. The upstream CLI 
 
 ## Installation
 
-The existing tap name is `leviathan-offsec/tap` for compatibility with published formula references. The **product name is Leviathan X**.
+The verified Homebrew tap repository is `cyeezy08/homebrew-tap`, installed through `cyeezy08/tap`. **Leviathan X** is the product identity.
 
 ```bash
-brew tap leviathan-offsec/tap
+brew tap cyeezy08/tap
 brew install fenrir hostage
 fenrir --help
 hostage --help
@@ -21,8 +21,8 @@ hostage --help
 Review each tool's README, release notes and license before use. Both utilities are intended for explicitly authorized target inventories. To inspect the formula itself:
 
 ```bash
-brew cat leviathan-offsec/tap/fenrir
-brew cat leviathan-offsec/tap/hostage
+brew cat cyeezy08/tap/fenrir
+brew cat cyeezy08/tap/hostage
 ```
 
 ## Updates
