@@ -1,6 +1,6 @@
 class Fenrir < Formula
-  desc "High-speed Go CLI for WordPress attack surface mapping and offline CVE correlation"
-  homepage "https://leviathan.ac"
+  desc "WordPress component observation and local advisory correlation"
+  homepage "https://github.com/cyeezy08/FenrirLVX"
   version "0.1.0"
 
   on_macos do
